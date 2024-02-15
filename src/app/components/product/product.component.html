@@ -1,0 +1,16 @@
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Menu Item Name</th>
+        <th scope="col">Menu Item Price</th>
+        <th scope="col">Menu Item Stock</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let product of products">
+        <td>{{product.productName | uppercase}}</td>
+        <td>{{product.unitPrice | currency}}</td>
+        <td>{{product.unitsInStock}}</td>
+      </tr>
+    </tbody>
+  </table>
